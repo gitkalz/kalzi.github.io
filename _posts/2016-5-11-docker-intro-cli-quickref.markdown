@@ -29,7 +29,6 @@ More detailed understanding of Docker can be found at docker docs or [HERE](http
 Some of the docker commands for quick reference
 
 ##### Installation
----
 
 Quick and easy install scripted installation on Linux based systems
 
@@ -37,9 +36,8 @@ Quick and easy install scripted installation on Linux based systems
 
 
 ##### Container Image Operations
----
 
-| Command                                            | Description                                                            |
+| Command                                           | Description                                                            |
 |:--------------------------------------------------:|------------------------------------------------------------------------|
 | `docker images`                                      | Lists images that are downloaded locally                               |
 | `docker search <image>`                              | Searches for the image in docker registry                              |
@@ -57,7 +55,6 @@ Quick and easy install scripted installation on Linux based systems
 | `docker images -qf dangling=true` &#124; `xargs docker rmi` | Removes all dangling images with image tag none                 |
 
 ##### Docker Service Ops
----
 
 | Command            | Description                  |
 |:------------------:|------------------------------|
@@ -66,7 +63,6 @@ Quick and easy install scripted installation on Linux based systems
 
 
 ##### Container Run State operations
----
 
 |                           Command                           | Description                                                                                                        |
 |:-----------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +78,6 @@ Quick and easy install scripted installation on Linux based systems
 | `docker ps -q` &#124; `xargs docker rm`                              | Removes all stopped Docker Containers                                                                              |
 
 ##### Container Admin Ops
----
 
 |             #####Command            | Description                                                                    |
 |:------------------------------:|--------------------------------------------------------------------------------|
