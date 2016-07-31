@@ -79,7 +79,7 @@ Quick and easy install scripted installation on Linux based systems
 
 ##### Container Admin Ops
 
-|             #####Command            | Description                                                                    |
+|             Command            | Description                                                                    |
 |------------------------------|--------------------------------------------------------------------------------|
 | `docker ps -a`                   | List all containers in CREATE/STOPPED/RUNNING States                           |
 | `docker logs -f <containername>` | Shows logs from the container, -f continuous tail                              |
