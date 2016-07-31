@@ -39,43 +39,45 @@ Quick and easy install scripted installation on Linux based systems
 
 | Command                                            | Description                                                            |
 |----------------------------------------------------|------------------------------------------------------------------------|
-| docker images                                      | Lists images that are downloaded locally                               |
-| docker search <image>                              | Searches for the image in docker registry                              |
-| docker rmi <imagetag>                              | Deletes/untags image specified from local filesystem                   |
-| docker pull <imagename>                            | Pulls stated image from docker repository                              |
-| docker build -t <imagetag> .                       | Builds Docker Image from the Dockerfile found in the current directory |
-| docker login                                       | Prompts for login to Docker Hub for image uploads                      |
-| docker push <imagetag>                             | Pushes local image to Docker Hub                                       |
-| docker tag <imageid> <definetag>                   | Tags an image with the name you specify in definetag                   |
-| docker history <imageid>                           | List image operations history                                          |
-| docker export <imagetag>                           | Exports the specified image to a tarball                               |
-| docker import <file>                               | Imports the specified image from a tarball                             |
-| docker load <file>                                 | loads an image from a tar archive                                      |
-| docker save                                        | Saves a image to a tar archive with all layers for later load          |
-| docker images -qf dangling=true &#124; xargs docker rmi | Removes all dangling images with image tag none                        |
+| `docker images`                                      | Lists images that are downloaded locally                               |
+| `docker search <image>`                              | Searches for the image in docker registry                              |
+| `docker rmi <imagetag>`                              | Deletes/untags image specified from local filesystem                   |
+| `docker pull <imagename>`                            | Pulls stated image from docker repository                              |
+| `docker build -t <imagetag> .`                       | Builds Docker Image from the Dockerfile found in the current directory |
+| `docker login`                                       | Prompts for login to Docker Hub for image uploads                      |
+| `docker push <imagetag>`                             | Pushes local image to Docker Hub                                       |
+| `docker tag <imageid> <definetag>`                   | Tags an image with the name you specify in definetag                   |
+| `docker history <imageid>`                           | List image operations history                                          |
+| `docker export <imagetag>`                           | Exports the specified image to a tarball                               |
+| `docker import <file>`                               | Imports the specified image from a tarball                             |
+| `docker load <file>`                                 | loads an image from a tar archive                                      |
+| `docker save`                                        | Saves a image to a tar archive with all layers for later load          |
+| `docker images -qf dangling=true` &#124; `xargs docker rmi` | Removes all dangling images with image tag none                 |
 
 ##### Docker Service Ops
 ---
 
-| Command          | Description                  |
-|------------------|------------------------------|
-| docker info      | List the Docker service info |
-| docker --version | Shows docker version         |
+| Command            | Description                  |
+|--------------------|------------------------------|
+| `docker info`      | List the Docker service info |
+| `docker --version` | Shows docker version         |
 
 
 ##### Container Run State operations
+---
+
 |                           Command                           | Description                                                                                                        |
 |:-----------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------|
-| docker run -it --name=<containername> --rm <imagename> bash | Creates and start a container interactively with TTY attached, name and from image , removes the image after exit. |
-| docker create                                               | Creates a writeable container layer over the specified image and prepares it for running the specified command     |
-| docker rename                                               | Allows a container to be renamed                                                                                   |
-| docker stop <containername> |<id>                           | Stops a container                                                                                                  |
-| docker start <containername> |<id>                          | Start a Stopped or Created Container                                                                               |
-| docker kill <containername> |<id>                           | Force kills a Running Container                                                                                    |
-| docker pause                                                | Pauses/Freezes a Container                                                                                         |
-| docker unpause                                              | UnPauses/Runs a Paused Container                                                                                   |
-| docker rm <containername>                                   | Deletes a container from runstate                                                                                  |
-| docker ps -q | xargs docker rm                              | Removes all stopped Docker Containers                                                                              |
+| `docker run -it --name=<containername> --rm <imagename> bash` | Creates and start a container interactively with TTY attached, name and from image , removes the image after exit. |
+| `docker create`                                               | Creates a writeable container layer over the specified image and prepares it for running the specified command     |
+| `docker rename`                                               | Allows a container to be renamed                                                                                   |
+| `docker stop <containername>` &#124; `<id>`                           | Stops a container                                                                                                  |
+| `docker start <containername>` &#124; `<id>`                          | Start a Stopped or Created Container                                                                               |
+| `docker kill <containername>` &#124; `<id>`                           | Force kills a Running Container                                                                                    |
+| `docker pause`                                                | Pauses/Freezes a Container                                                                                         |
+| `docker unpause`                                              | UnPauses/Runs a Paused Container                                                                                   |
+| `docker rm <containername>`                                   | Deletes a container from runstate                                                                                  |
+| `docker ps -q` &#124; `xargs docker rm`                              | Removes all stopped Docker Containers                                                                              |
 
 ##### Container Admin Ops
 ---
