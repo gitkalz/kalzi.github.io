@@ -38,7 +38,7 @@ Quick and easy install scripted installation on Linux based systems
 ##### Container Image Operations
 
 | Command                                           | Description                                                            |
-|:--------------------------------------------------:|------------------------------------------------------------------------|
+|--------------------------------------------------|------------------------------------------------------------------------|
 | `docker images`                                      | Lists images that are downloaded locally                               |
 | `docker search <image>`                              | Searches for the image in docker registry                              |
 | `docker rmi <imagetag>`                              | Deletes/untags image specified from local filesystem                   |
@@ -57,7 +57,7 @@ Quick and easy install scripted installation on Linux based systems
 ##### Docker Service Ops
 
 | Command            | Description                  |
-|:------------------:|------------------------------|
+|------------------|------------------------------|
 | `docker info`      | List the Docker service info |
 | `docker --version` | Shows docker version         |
 
@@ -65,7 +65,7 @@ Quick and easy install scripted installation on Linux based systems
 ##### Container Run State operations
 
 |                           Command                           | Description                                                                                                        |
-|:-----------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | `docker run -it --name=<containername> --rm <imagename> bash` | Creates and start a container interactively with TTY attached, name and from image , removes the image after exit. |
 | `docker create`                                               | Creates a writeable container layer over the specified image and prepares it for running the specified command     |
 | `docker rename`                                               | Allows a container to be renamed                                                                                   |
@@ -80,7 +80,7 @@ Quick and easy install scripted installation on Linux based systems
 ##### Container Admin Ops
 
 |             #####Command            | Description                                                                    |
-|:------------------------------:|--------------------------------------------------------------------------------|
+|------------------------------|--------------------------------------------------------------------------------|
 | `docker ps -a`                   | List all containers in CREATE/STOPPED/RUNNING States                           |
 | `docker logs -f <containername>` | Shows logs from the container, -f continuous tail                              |
 | `docker inspect <containername>` | Shows the detailed container metadata in JSON Format                           |
