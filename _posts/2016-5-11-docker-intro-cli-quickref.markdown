@@ -30,15 +30,17 @@ Some of the docker commands for quick reference
 
 ##### Installation
 ---
+
 Quick and easy install scripted installation on Linux based systems
 
 ```curl -sSL https://get.docker.com/ | sh```
+
 
 ##### Container Image Operations
 ---
 
 | Command                                            | Description                                                            |
-|----------------------------------------------------|------------------------------------------------------------------------|
+|:--------------------------------------------------:|------------------------------------------------------------------------|
 | `docker images`                                      | Lists images that are downloaded locally                               |
 | `docker search <image>`                              | Searches for the image in docker registry                              |
 | `docker rmi <imagetag>`                              | Deletes/untags image specified from local filesystem                   |
@@ -58,7 +60,7 @@ Quick and easy install scripted installation on Linux based systems
 ---
 
 | Command            | Description                  |
-|--------------------|------------------------------|
+|:------------------:|------------------------------|
 | `docker info`      | List the Docker service info |
 | `docker --version` | Shows docker version         |
 
@@ -84,14 +86,14 @@ Quick and easy install scripted installation on Linux based systems
 
 |             Command            | Description                                                                    |
 |:------------------------------:|--------------------------------------------------------------------------------|
-| docker ps -a                   | List all containers in CREATE/STOPPED/RUNNING States                           |
-| docker logs -f <containername> | Shows logs from the container, -f continuous tail                              |
-| docker inspect <containername> | Shows the detailed container metadata in JSON Format                           |
-| docker events <containername>  | Shows events from Container                                                    |
-| docker port <containername>    | Shows public/exposed ports from the container                                  |
-| docker top <containername>     | Shows running process in a container                                           |
-| docker stats <containername>   | Shows containers resource usage statistics                                     |
-| docker network ls              | Shows Docker networks                                                          |
-| docker network create          | Create a new Docker bridge                                                     |
-| docker network rm              | Removes specified network bridge                                               |
-| docker network inspect         | Shows bridge IP subnet and the gateway info and associates containers attached |
+| `docker ps -a`                   | List all containers in CREATE/STOPPED/RUNNING States                           |
+| `docker logs -f <containername>` | Shows logs from the container, -f continuous tail                              |
+| `docker inspect <containername>` | Shows the detailed container metadata in JSON Format                           |
+| `docker events <containername>`  | Shows events from Container                                                    |
+| `docker port <containername>`    | Shows public/exposed ports from the container                                  |
+| `docker top <containername>`     | Shows running process in a container                                           |
+| `docker stats <containername>`   | Shows containers resource usage statistics                                     |
+| `docker network ls`              | Shows Docker networks                                                          |
+| `docker network create`          | Create a new Docker bridge                                                     |
+| `docker network rm`              | Removes specified network bridge                                               |
+| `docker network inspect`         | Shows bridge IP subnet and the gateway info and associates containers attached |
