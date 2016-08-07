@@ -48,7 +48,7 @@ pre {
 
 hr {
   margin-top: $space-3;
-  margin-bottom: .9rem;
+  margin-bottom: $space-3;
 }
 
 blockquote {
@@ -61,7 +61,7 @@ blockquote {
 
 blockquote,
 blockquote p {
-  font-size: .9rem;
+  font-size: $h3;
   font-style: italic;
 }
 
