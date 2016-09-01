@@ -2,7 +2,7 @@
 title:       Home
 email:       
 author:      Kalyan Chakravarthi
-description: "Just a scratch pad for technical notes and thoughts."
+description: "A scratch pad for technical notes and thoughts."
 baseurl:     ""
 url:         "https://kalzi.github.io"
 date_format: "%b %-d, %Y"
