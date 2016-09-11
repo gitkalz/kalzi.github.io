@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get vCenter IP from ESXi Host"
-date: "2016-10-11"
+date: "2016-09-11"
 comments: true
 categories: vSphere
 ---
