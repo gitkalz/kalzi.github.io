@@ -36,3 +36,5 @@ PowerCLI > $esx.network.ip.connection.list() | Where-Object {$_.State -match "Es
 @{LocalAddress=10.87.167.14:443; ForeignAddress=10.87.129.230:44846; State=ESTABLISHED}
 @{LocalAddress=10.87.167.14:443; ForeignAddress=10.87.129.230:39415; State=ESTABLISHED}
 {% endhighlight %}
+
+vCenter Establishes Connection on port `443` to ESXiHost, and by listing Established connections on `443` we can easily guess the vCenter IP. 
