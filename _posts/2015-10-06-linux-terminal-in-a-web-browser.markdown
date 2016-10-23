@@ -21,9 +21,7 @@ You may wish to use my docker image or build your own by customizing my [GIT Rep
 Check out the [terminal recording](https://asciinema.org/a/4qktrmlwxbhdl87vizno30ei1) to glance on how to build from my repo as is.
 
 <div id="player"></div>
-<script>
-  src="/_includes/js/asciinema-player.js">
-</script>
+<script src="/images/js/asciinema-player.js"></script>
 <asciinema-player src="/images/terminalbrowser.json"></asciinema-player>
 
 Alternatively, you may readily use my automated image linked to my Git Repo from Docker hub as follows
