@@ -22,8 +22,9 @@ Check out the [terminal recording](https://asciinema.org/a/4qktrmlwxbhdl87vizno3
 
 <div id="player"></div>
 <script>
-  asciinema_player.core.CreatePlayer('player', '/assets/attachments/terminalbrowser.json', { speed: 2, theme: 'monokai', fontSize: 'medium' });
+  src="/_includes/js/asciinema-player.js">
 </script>
+<asciinema-player src="/images/terminalbrowser.json"></asciinema-player>
 
 Alternatively, you may readily use my automated image linked to my Git Repo from Docker hub as follows
 
